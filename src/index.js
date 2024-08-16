@@ -5,10 +5,13 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/About';
+import NewToyForm from './components/NewToyForm';
+import ErrorPage from './components/ErrorPage';
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -17,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/add_toy',
+        element: <NewToyForm />
       }
     ]
   }
