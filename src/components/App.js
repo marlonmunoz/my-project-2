@@ -5,13 +5,11 @@ import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';  
 import NavBar from './NavBar';
 import Header from './Header';
-import Toy from './Toy';
 
 
 function App() {  
   const [toys, setToys] = useState([]);   
    
-  const [selectedAgeRange, setSelectedAgeRange] = useState(""); 
   const [searchQuery, setSearchQuery] = useState("");
 
   
@@ -47,10 +45,16 @@ function App() {
     setSearchQuery(event.target.value);
   }
 
-  const filteredToys = toys.filter(toy => // Step 3: Filter toys based on search query
-    toy.name.toUpperCase().includes(searchQuery.toUpperCase())
+  const filteredToys = toys.filter(toy => 
+    toy.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
- 
+  
+  function renderFilteredToys() {
+    return filteredToys.map(toy => (
+      <li key={toy.id}>{toy.name}</li>
+    ));
+  }
+  
   return (
     
 
@@ -62,13 +66,12 @@ function App() {
           type="text" 
           placeholder="Search toys..." 
           value={searchQuery} 
-          onChange={handleSearchChange} // Step 4: Add search input field
+          onChange={handleSearchChange} 
         />
         <ul>
-          {filteredToys.map(toy => (
-            <li key={toy.id}>{toy.name}</li>
-          ))}
+          {renderFilteredToys()}
         </ul>
+     
       </div>
       <Outlet context={{toys: toys, addNewToy: addNewToy, deleteToy: deleteToy}} /> 
     </div>
