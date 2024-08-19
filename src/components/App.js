@@ -1,18 +1,13 @@
-
-import '../App.css';
-import '../NavBar.css'; 
 import { useState, useEffect } from 'react';   
-import { Outlet } from 'react-router-dom';  
 import NavBar from './NavBar';
 import Header from './Header';
+import SearchBar from './SearchBar';
+import { Outlet } from 'react-router-dom';  
 
 
 function App() {  
-  const [toys, setToys] = useState([]);   
-   
-  const [searchQuery, setSearchQuery] = useState("");
-
-  
+  const [toys, setToys] = useState([]); 
+  const [searchText, setSearchText] = useState("");  
 
   useEffect(() => {             
     fetch("http://localhost:4000/toys")  
@@ -20,6 +15,13 @@ function App() {
       .then(data => setToys(data)); 
   }, []);
 
+  const filteredToys = toys.filter(toy => {
+    return toy.name.toUpperCase().includes(searchText.toUpperCase());
+  })
+  
+  function updateSearchText(event) {
+    setSearchText(event.target.value);
+  }
 
   function addNewToy(newToy) {
     fetch("http://localhost:4000/toys", {
@@ -40,40 +42,12 @@ function App() {
     })
     .then(() => setToys(toys.filter(toy => toy.id !== toyId)));
   }
-
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  }
-
-  const filteredToys = toys.filter(toy => 
-    toy.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-  
-  function renderFilteredToys() {
-    return filteredToys.map(toy => (
-      <li key={toy.id}>{toy.name}</li>
-    ));
-  }
   
   return (
-    
-
     <div className="App">
       <NavBar />
       <Header />
-      <div className='search-container'>
-        <input 
-          type="text" 
-          placeholder="Search toys..." 
-          value={searchQuery} 
-          onChange={handleSearchChange} 
-        />
-        <ul>
-          {renderFilteredToys()}
-        </ul>
-     
-      </div>
-      <Outlet context={{toys: toys, addNewToy: addNewToy, deleteToy: deleteToy}} /> 
+      <Outlet context={{toys: filteredToys, addNewToy: addNewToy, deleteToy: deleteToy, updateSearchText: updateSearchText, searchText: searchText}} /> 
     </div>
   );
 }

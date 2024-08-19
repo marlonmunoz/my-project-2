@@ -1,6 +1,5 @@
 import { useOutletContext, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import '../NewToyForm.css';
 
 
 function NewToyForm() {      
@@ -111,7 +110,7 @@ function NewToyForm() {
                     />
                 </div>
                 <br/><br/>
-                <button type="submit">Add To List</button>
+                <button className="add-to-list" type="submit">Add To List</button>
             </form>
         </div>
     )

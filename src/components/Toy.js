@@ -1,4 +1,3 @@
-import { useOutletContext } from "react-router-dom";
 import LikeButton from "./LikeButton";
 
 function Toy({ toy, deleteToy }) {
@@ -10,11 +9,11 @@ function Toy({ toy, deleteToy }) {
           <div className="toy-details">
               <h2>{toy.name}</h2>
               <p id="description">{toy.description}</p>
-              <p id="price">$ {toy.price}</p>
+              <p id="toy-price">$ {toy.price}</p>
               <h3>Ages: {toy.age}</h3>
 
               <div className="my-buttons">
-                  <button onClick={deleteToy}>🗑️ Delete Toy</button>
+                  <button className="delete-button" onClick={deleteToy}>🗑️ Delete Toy</button>
                   <LikeButton />
               </div>
 

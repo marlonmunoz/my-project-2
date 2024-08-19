@@ -16,28 +16,193 @@ code {
     monospace;
 }
 
-.form-flex {
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ HOME & NAV-TAB ------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+.my-tabs {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ul-nav {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.my-tabs a {
+  color: white; /* Default text color */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: royalblue;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.my-tabs a:hover {
+  background-color: rgb(132, 45, 213);
+  box-shadow: 0 0 30px rgba(55, 233, 27, 0.5);
+
+}
+
+
+#search-toy-bar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: small;
+  border-radius: 10px;
+  height: 20px;
+  width: 200px;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0% 30%;
+}
+
+.toy:hover {
+  box-shadow: 0 0 30px rgba(55, 233, 27, 0.5);
+}
+
+.toy-image {
+  width: 500px; 
+  height: auto; 
+}
+
+.form-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-button {
+.toy {
+  position: relative;
+  display: inline-block;
+  flex-direction:row-reverse;
+  align-items: left;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 30px 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toy > div {
+  background-color: rgba(64, 17, 41, 0.5);
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 0px 10px 15px;
+}  
+
+.delete-button {
 
   padding: 4px 40px;
   border-radius: 7px;
-  /* background-color: rgb(181, 73, 175); */
+  background-color: rgb(192, 61, 61);
+  color: white  ;
+}
+
+.liked-button {
+
+  padding: 4px 40px;
+  border-radius: 7px;
   background-color: royalblue;
   color: white  ;
-  
 }
+
 
 .my-buttons {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 15px;
+  gap: 18px;
   margin: 10px;
 }
+
+#toy-price {
+  color: rgb(187, 255, 85);
+  font-weight: bold;
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ ADD NEW TOY TAB ------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+#name,
+#image,
+#age,
+#price,
+#description {
+  border-radius: 8px;
+}
+
+
+.form-container {
+  position: relative; 
+  display: inline-block; 
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 70px;
+  border-radius: 8px;
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://st2.depositphotos.com/2538523/6871/v/950/depositphotos_68715711-stock-illustration-colorful-kids-on-the-notebook.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1; 
+  border-radius: 8px;
+}
+
+.my-inputs {
+  width: 90%; 
+  padding: 10px;
+  margin: 10px 0; 
+  box-sizing: border-box; 
+  border-radius: 4px; 
+  border: 1px solid #ccc;
+}
+
+#description {
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid white;
+  padding: 20px;
+
+}
+
+.add-to-list {
+
+  padding: 4px 40px;
+  border-radius: 7px;
+  background-color: rgb(55, 216, 82);
+  color: black;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ MISSION TAB ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
 
 #mission {
   font-size: 1.5em;
@@ -50,6 +215,11 @@ button {
 }
 
 
+/* ---------------------------------------------------------------------------------- */
+/* ------ ERROR PAGE ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+
 #error-gif {
   display: flex;
   justify-content: center;
@@ -60,3 +230,193 @@ button {
   border-radius: 100%40%;
   opacity: 0.5;
 }
+
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ to delete ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+                                  /* App.css */
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .search-bar-container {
+  position: absolute;
+  top: 30px; 
+  right: 30px; 
+}
+
+#search-field {
+  border-radius: 5px;
+  border: 1px solid rgb(230, 37, 204);
+} */
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ to delete ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+                                  /* NavBar.css */
+
+
+/* .nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+} */
+
+/* .my-links {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: royalblue;
+} */
+
+/* .my-tabs a {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+} */
+
+
+/* .my-tabs:hover {
+    background-color: rgb(132, 45, 213);
+} */
+
+
+
+/* body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0% 25%;
+} */
+
+/* .toy {
+    position: relative;
+    display: inline-block;
+    flex-direction:row-reverse;
+    align-items: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 30px 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+
+/* .toy > div {
+    background-color: rgba(64, 17, 41, 0.5);
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 0px 10px 15px;
+}   */
+
+/* .toy:hover {
+    border: 2px solid rgb(55, 233, 27);
+} */
+
+/* .toy-image {
+    width: 500px; 
+    height: auto; 
+} */
+
+/* #description {
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid white;
+    padding: 20px;
+
+} */
+
+/* #toy-price {
+    color: rgb(187, 255, 85);
+    font-weight: bold;
+} */
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------ to delete ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------- */
+                                  /* NewToyForm.css */
+
+
+/* #name,
+#image,
+#age,
+#price,
+#description {
+    border-radius: 8px;
+} */
+
+
+/* .form-container {
+    position: relative; 
+    display: inline-block; 
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: 1px solid white;
+    padding: 70px;
+    border-radius: 8px;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://st2.depositphotos.com/2538523/6871/v/950/depositphotos_68715711-stock-illustration-colorful-kids-on-the-notebook.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1; 
+    border-radius: 8px;
+}
+
+.my-inputs {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0; 
+    box-sizing: border-box; 
+    border-radius: 4px; 
+    border: 1px solid #ccc;
+} */

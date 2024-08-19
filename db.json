@@ -2,7 +2,7 @@
   "toys": [
     {
       "id": 1,
-      "name": "The Looker Play Kit",
+      "name": "Looker Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2FJwOZpORwCxFJnXNMxS9v8%2F293d4cf0880b3c534f79e7924fd48e76%2FLovevery-VKS-Playkit-TheLooker-ISO-305-NOV2021.png&w=1920&q=75",
       "age": "0-3 months",
       "price": 80,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "The Charmer Play Kit",
+      "name": "Charmer Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
       "age": "3-4 months",
       "price": 80,
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "The Sensor Play Kit",
+      "name": "Sensor Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F2mkkwS9Jvyi4yNKYtrZX1k%2Fe5817e74e0eedefb821d091e6a61a426%2FLovevery-VKS-Playkit-TheSenser-ISO-269-April2021_Transparent.png&w=1920&q=75",
       "age": "5-6 months",
       "price": 80,
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "name": "The Inspector Play Kit",
+      "name": "Inspector Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F6fUKlXguGryrtZhuU0Hn5m%2F5b44f967072b9b0c9868537cdfd2f17f%2FLovevery-VKS-Playkit-TheInspector-ISO-256-April2021__1_.png&w=1920&q=75",
       "age": "7-8 months",
       "price": 80,
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "name": "The Explorer Play Kit",
+      "name": "Explorer Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F3pDFzaM3o6VRIrRRCOHBrK%2F075b2204e7831def294a8f75f8eadfdb%2FLovevery-VKS-Playkit-TheExplorer-ISO-238-July-2023-Web__1_.png&w=1920&q=75",
       "age": "9-10 months",
       "price": 80,
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "name": "The Thinker Play Kit",
+      "name": "Thinker Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2FwTJYA0bUvRb8jDu5QAF20%2F72e9301decdb4e690bb35e073558ef23%2FLovevery-VKS-Playkit-TheThinker-ISO-226-Dec2021-Web.png&w=1920&q=75",
       "age": "11-12 months",
       "price": 80,
