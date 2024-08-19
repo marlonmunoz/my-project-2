@@ -5,13 +5,13 @@ function NavBar () {
         <nav className="nav-tabs">
             <ul>
                 <li className="my-links">
-                    <NavLink to="/">Home </NavLink>
+                    <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home </NavLink>
                 </li>
                 <li className="my-links">
-                    <NavLink to="/add_toy"> AddToy </NavLink>
+                    <NavLink to="/add_toy" className={({ isActive }) => isActive ? "active" : ""}> Add New Toy </NavLink>
                 </li>
                 <li className="my-links">
-                    <NavLink to="/about">About </NavLink>
+                    <NavLink to="/mission" className={({ isActive }) => isActive ? "active" : ""}>Mission </NavLink>
                 </li>
             </ul>
         </nav>
@@ -20,12 +20,3 @@ function NavBar () {
 export default NavBar;
 
 
-// function NavBar () {my-links
-//     return (
-//         <nav className="nav-tabs">
-//             <NavLink to="/">Home </NavLink>
-//             <NavLink to="/add_toy"> AddToy </NavLink>
-//             <NavLink to="/about">About </NavLink>
-//         </nav>
-//     )
-// }

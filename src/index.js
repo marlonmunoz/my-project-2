@@ -4,9 +4,10 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import About from './components/About';
-import NewToyForm from './components/NewToyForm';
 import ErrorPage from './components/ErrorPage';
+import NewToyForm from './components/NewToyForm';
+import ToyList from './components/ToyList';
+import About from './components/About';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,17 +15,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
-        element: <h1>This is a list of Items</h1>
-      },
-      {
-        path: '/about',
-        element: <About />,
+        path: '/home',
+        element: <ToyList />
       },
       {
         path: '/add_toy',
         element: <NewToyForm />
-      }
+      },
+      {
+        path: '/mission',
+        element: <About />,
+      },
     ]
   }
 ]);

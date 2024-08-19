@@ -16,3 +16,47 @@ code {
     monospace;
 }
 
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+
+  padding: 10px 30px;
+  border-radius: 7px;
+  /* background-color: rgb(181, 73, 175); */
+  background-color: royalblue;
+  color: white  ;
+  
+}
+
+.my-buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+
+#mission {
+  font-size: 1.5em;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 50px;
+  margin: 20px 200px;
+  background-color: rgba(54, 34, 74, 0.5);
+}
+
+
+#error-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 100%40%;
+  opacity: 0.5;
+}

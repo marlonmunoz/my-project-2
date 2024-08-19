@@ -1,8 +1,8 @@
 function Header() {
     return (
         <div>
-            <h1>👶 PlayTime 🧸</h1>
-            <p>Successfully Created</p>
+            <h1>👶 Play-Time 🧸</h1>
+            <p>Toys For Child Development</p>
         </div>
     )
 }

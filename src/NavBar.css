@@ -1,10 +1,71 @@
-ul {
-    padding: 10px;
-    list-style-type: none;
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
+.my-links {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: royalblue;
+}
 
-.mylinks {
-    color: white;
+.my-links a {
+    color: white; /* Default text color */
     text-decoration: none;
+    font-size: 20px;
 }
+
+
+.my-links:hover {
+    background-color: rgb(132, 45, 213);
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margin */
+    padding: 0% 20%;
+}
+
+.toy {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toy > div {
+    background-color: rgba(64, 17, 41, 0.5);
+    border-radius: 7px;
+    padding: 30px 10px;
+}  
+
+.toy:hover {
+    border: 2px solid rgb(55, 233, 27);
+}
+
+.toy-image {
+    width: 400px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#description {
+    text-align: center;
+    font-size: 15px;
+}
+
+#price {
+    color: rgb(187, 255, 85);
+    font-weight: bold;
+}
+
