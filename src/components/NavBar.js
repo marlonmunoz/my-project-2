@@ -12,7 +12,7 @@ function NavBar () {
                 </li>
                 <li className="my-tabs">
                     <NavLink to="/mission" >Mission </NavLink>
-                </li>
+                </li> 
             </ul>
         </nav>
     )

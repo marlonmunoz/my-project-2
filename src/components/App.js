@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';   
 import NavBar from './NavBar';
 import Header from './Header';
-import { Outlet } from 'react-router-dom';  
+import { Outlet } from 'react-router-dom'; 
+
 
 
 function App() {  
