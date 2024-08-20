@@ -5,13 +5,13 @@ function NavBar () {
         <nav className="nav-tabs">
             <ul className="ul-nav">
                 <li className="my-tabs">
-                    <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home </NavLink>
+                    <NavLink to="/home" >Home </NavLink>
                 </li>
                 <li className="my-tabs">
-                    <NavLink to="/add_toy" className={({ isActive }) => isActive ? "active" : ""}> Add New Toy </NavLink>
+                    <NavLink to="/add_toy" > Add New Toy </NavLink>
                 </li>
                 <li className="my-tabs">
-                    <NavLink to="/mission" className={({ isActive }) => isActive ? "active" : ""}>Mission </NavLink>
+                    <NavLink to="/mission" >Mission </NavLink>
                 </li>
             </ul>
         </nav>

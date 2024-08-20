@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';   
 import NavBar from './NavBar';
 import Header from './Header';
-import SearchBar from './SearchBar';
 import { Outlet } from 'react-router-dom';  
 
 

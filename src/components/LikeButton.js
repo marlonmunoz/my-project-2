@@ -10,7 +10,7 @@ const LikeButton = () => {
     }
     return (
         <div>
-            <button className="liked-button" onClick={handleLike }>
+            <button id="likeButton" className="liked-button" onClick={handleLike }>
             {dislikes ? `❤️ Liked ${likes}` : `♡ Like ${likes}`}
             </button>
         </div>

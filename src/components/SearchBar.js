@@ -7,7 +7,7 @@ function SearchBar() {
       <label htmlFor="search">Search Toys : </label>
       <input
         type="text"
-        id="search-toy-bar"
+        id="search"
         value={searchText}
         onChange={updateSearchText}
         placeholder="Search Toys..."

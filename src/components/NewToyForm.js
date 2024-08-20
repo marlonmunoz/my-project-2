@@ -59,12 +59,12 @@ function NewToyForm() {
                 <div className="form-group">
                     <label htmlFor="image">Toy URL Image: </label>
                     <input
-                    className="my-inputs" 
-                    onChange={updateForm} 
-                    type="text" 
-                    id="image" 
-                    name="image" 
-                    value= {formData.image}
+                        className="my-inputs" 
+                        onChange={updateForm} 
+                        type="text" 
+                        id="image" 
+                        name="image" 
+                        value= {formData.image}
                     />
                 </div>
 
@@ -73,12 +73,12 @@ function NewToyForm() {
                 <div className="form-group">
                     <label htmlFor="age">Toy By Age: </label>
                     <input
-                    className="my-inputs" 
-                    onChange={updateForm} 
-                    type="text" 
-                    id="age" 
-                    name="age" 
-                    value= {formData.age}
+                        className="my-inputs" 
+                        onChange={updateForm} 
+                        type="text" 
+                        id="age" 
+                        name="age" 
+                        value= {formData.age}
                     />
                 </div>
                
@@ -87,12 +87,12 @@ function NewToyForm() {
                 <div className="form-group">
                     <label htmlFor="price">Toy Price: </label>
                     <input
-                    className="my-inputs" 
-                    onChange={updateForm} 
-                    type="text" 
-                    id="price" 
-                    name="price" 
-                    value= {formData.price}
+                        className="my-inputs" 
+                        onChange={updateForm} 
+                        type="text" 
+                        id="price" 
+                        name="price" 
+                        value= {formData.price}
                     />
                 </div>
 
@@ -101,12 +101,12 @@ function NewToyForm() {
                 <div className="form-group">
                     <label htmlFor="description">Toy Description: </label>
                     <input
-                    className="my-inputs" 
-                    onChange={updateForm} 
-                    type="text" 
-                    id="description" 
-                    name="description" 
-                    value= {formData.description}
+                        className="my-inputs" 
+                        onChange={updateForm} 
+                        type="text" 
+                        id="description" 
+                        name="description" 
+                        value= {formData.description}
                     />
                 </div>
                 <br/><br/>
