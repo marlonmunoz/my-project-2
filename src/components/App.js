@@ -22,27 +22,25 @@ function App() {
   function updateSearchText(event) {
     setSearchText(event.target.value);
   }
+  function deleteToy(toyId) {
+    setToys(toys.filter(toy => toy.id !== toyId));
+  }
 
   function addNewToy(newToy) {
-    fetch("http://localhost:4000/toys", {
+    const configObj = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
       body: JSON.stringify(newToy)
-    })
-    .then (response => response.json())
-    .then (newToyData => setToys([...toys, newToyData]));
+    };
+  
+    fetch("http://localhost:4000/toys", configObj)
+      .then(response => response.json())
+      .then(newToyData => setToys([...toys, newToyData])); // Update state with the new toy data
   }
 
-  function deleteToy(toyId) {
-    fetch(`http://localhost:4000/toys/${toyId}`, {
-      method: "DELETE",
-    })
-    .then(() => setToys(toys.filter(toy => toy.id !== toyId)));
-  }
-  
   return (
     <div className="App">
       <NavBar />

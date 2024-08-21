@@ -1,15 +1,15 @@
 {
   "toys": [
     {
-      "id": 1,
-      "name": "Looker Play Kit",
-      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2FJwOZpORwCxFJnXNMxS9v8%2F293d4cf0880b3c534f79e7924fd48e76%2FLovevery-VKS-Playkit-TheLooker-ISO-305-NOV2021.png&w=1920&q=75",
-      "age": "0-3 months",
+      "id": "1",
+      "name": "Sensory Play Kit",
+      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
+      "age": "0-2 months",
       "price": 80,
-      "description": "Sensitive to light and sound, your newborn is already becoming aware of their new world. This Play Kit helps them build new brain connections with high-contrast images and black and white sensory mittens."
+      "description": "Your baby is just starting to explore the world around them. This Play Kit is designed to help your baby develop their senses, learn to track movement, and begin to understand cause and effect."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Charmer Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
       "age": "3-4 months",
@@ -17,7 +17,7 @@
       "description": "Your baby may start to recognize your face—cooing at you, smiling, and delighting everyone they meet. This Play Kit is designed to let your baby explore with their mouth, eyes, and hands as their personality emerges and their social awareness grows."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Sensor Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F2mkkwS9Jvyi4yNKYtrZX1k%2Fe5817e74e0eedefb821d091e6a61a426%2FLovevery-VKS-Playkit-TheSenser-ISO-269-April2021_Transparent.png&w=1920&q=75",
       "age": "5-6 months",
@@ -25,7 +25,7 @@
       "description": "Your baby may be tasting, mouthing, and feeling everything they can get their hands on right now. This Play Kit helps your baby investigate their world around them, while working on getting themself closer to what looks and sounds exciting to them."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Inspector Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F6fUKlXguGryrtZhuU0Hn5m%2F5b44f967072b9b0c9868537cdfd2f17f%2FLovevery-VKS-Playkit-TheInspector-ISO-256-April2021__1_.png&w=1920&q=75",
       "age": "7-8 months",
@@ -33,7 +33,7 @@
       "description": "Your baby is more aware of everything around them and fascinated with details. This Play Kit makes the most of your baby's natural curiosity about how things work with opportunities to explore texture, practice nesting and stacking, and learn about object permanence."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Explorer Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F3pDFzaM3o6VRIrRRCOHBrK%2F075b2204e7831def294a8f75f8eadfdb%2FLovevery-VKS-Playkit-TheExplorer-ISO-238-July-2023-Web__1_.png&w=1920&q=75",
       "age": "9-10 months",
@@ -41,12 +41,13 @@
       "description": "Your baby loves to see the effect they can have on their environment. This Play Kit is designed to experiment with gravity, practice balance, and begin coordinating both sides of their body."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Thinker Play Kit",
       "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2FwTJYA0bUvRb8jDu5QAF20%2F72e9301decdb4e690bb35e073558ef23%2FLovevery-VKS-Playkit-TheThinker-ISO-226-Dec2021-Web.png&w=1920&q=75",
       "age": "11-12 months",
       "price": 80,
-      "description": "Your baby is starting to put it all together and understand concepts at a deeper level. This Play Kit encourages your baby to define and organize information while engaging their budding imagination"
+      "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
     }
+    
   ]
 }
