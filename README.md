@@ -15,9 +15,9 @@ To access this project you need to run the following commands in your terminal f
 - A navigation bar for all client-side routes
 - A search bar to quick and easily find your toy
 - A form to add toys to our collection 
-- The avility to select your toys by age
-- The avility to like toys
-- The avility to delete toys 
+- The ability to select your toys by age
+- The ability to like toys
+- The ability to delete toys 
 
 
 ## Components
