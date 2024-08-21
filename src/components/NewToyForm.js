@@ -72,14 +72,23 @@ function NewToyForm() {
                 <br/><br/>
                 <div className="form-group">
                     <label htmlFor="age">Toy By Age: </label>
-                    <input
+                    <select
                         className="my-inputs" 
                         onChange={updateForm} 
                         type="text" 
                         id="age" 
                         name="age" 
                         value= {formData.age}
-                    />
+                    >
+                        <option value="">Select Month</option>
+                        <option value="0-2 months">0-2 months</option>
+                        <option value="3-4 months">3-4 months</option>
+                        <option value="5-6 months">5-6 months</option>
+                        <option value="7-8 months">7-8 months</option>
+                        <option value="9-10 months">9-10 months</option>
+                        <option value="11-12 months">11-12 months</option>
+
+                    </select>
                 </div>
                
                 {/* PRICE */} 

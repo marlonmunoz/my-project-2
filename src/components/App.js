@@ -51,6 +51,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Header />
+      
       <Outlet context={{toys: filteredToys, addNewToy: addNewToy, deleteToy: deleteToy, updateSearchText: updateSearchText, searchText: searchText}} /> 
     </div>
   );
