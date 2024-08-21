@@ -1,6 +1,6 @@
 
 # INTRODUCTION
-This app focuses on giving new parents a selection of toys for Child Developement. 
+This app focuses on giving new parents a selection of toys for Child Developement. Each toy selection has a description about what the toy key features offers according to the childs age.  
 
 ## Setup:
 
