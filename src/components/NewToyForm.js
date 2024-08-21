@@ -87,6 +87,8 @@ function NewToyForm() {
                         <option value="7-8 months">7-8 months</option>
                         <option value="9-10 months">9-10 months</option>
                         <option value="11-12 months">11-12 months</option>
+                        <option value="13-14 months">13-14 months</option>
+                        <option value="15-16 months">15-16 months</option>
 
                     </select>
                 </div>
@@ -108,7 +110,7 @@ function NewToyForm() {
                 {/* DESCRIPTION */}
                 <br/><br/>
                 <div className="form-group">
-                    <label htmlFor="description">Toy Description: </label>
+                    <label htmlFor="description">Toy Description: 
                     <input
                         className="my-inputs" 
                         onChange={updateForm} 
@@ -117,6 +119,7 @@ function NewToyForm() {
                         name="description" 
                         value= {formData.description}
                     />
+                    </label>
                 </div>
                 <br/><br/>
                 <button className="add-to-list" type="submit">Add To List</button>

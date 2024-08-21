@@ -1,10 +1,26 @@
 import { useOutletContext } from "react-router-dom";
 
 function SearchBar() {
-    const { searchText, updateSearchText } = useOutletContext();
+    const { searchText, updateSearchText, handleAgeChange, selectedAge } = useOutletContext();
   return (
+    <>
+    <div>
+        <label>Select By Age : </label>
+        <select className="search-by-age" onChange={handleAgeChange} value={selectedAge}>
+          <option value="all">All Toys</option>
+          <option value="0-2 months">0-2 months</option>
+          <option value="3-4 months">3-4 months</option>
+          <option value="5-6 months">5-6 months</option>
+          <option value="7-8 months">7-8 months</option>
+          <option value="9-10 months">9-10 months</option>
+          <option value="11-12 months">11-12 months</option>
+          <option value="13-14 months">13-14 months</option>
+          <option value="15-16 months">15-16 months</option>
+        </select>
+      </div>
+      <br></br>
     <div className="searchbar">
-      <label htmlFor="search">Search Toys : </label>
+      <label htmlFor="search">Search By Name : </label>
       <input
         type="text"
         id="search"
@@ -13,6 +29,9 @@ function SearchBar() {
         placeholder="Search Toys..."
       />
     </div>
+    </>
+    
+    
   );
 }
 

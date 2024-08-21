@@ -54,13 +54,18 @@ code {
 
 
 #search {
-  background-color: rgb(94, 42, 116);
-  color: white;
-  font-size: small;
+
+  font-size: 13px;
   border-radius: 10px;
   height: 20px;
   width: 200px;
-  
+}
+
+.search-by-age {
+  font-size: 13px;
+  border-radius: 10px;
+  height: 24px;
+  width: 200px;
 }
 
 body {
@@ -102,7 +107,7 @@ body {
   border-radius: 7px;
   padding: 0px 10px 15px;
   width: 500px; /* Set a fixed width */
-  height: 350px;
+  height: 350px;  /* Set a fixed height */
 }  
 
 .delete-button {
@@ -205,11 +210,18 @@ body {
   color: black;
 }
 
+.form-container:hover {
+  box-shadow: 0 0 30px rgba(55, 233, 27, 0.5);
+}
+
 
 /* ---------------------------------------------------------------------------------- */
 /* ------ MISSION TAB ----------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------- */
 
+.sub-header {
+  color: rgb(127, 229, 149);
+}
 
 #mission {
   font-size: 1.5em;
@@ -219,6 +231,8 @@ body {
   padding: 50px;
   margin: 20px 200px;
   background-color: rgba(54, 34, 74, 0.5);
+  width: 400px; /* Set a fixed width */
+  height: 150px;  /* Set a fixed height */
 }
 
 
@@ -239,191 +253,3 @@ body {
 }
 
 
-
-/* ---------------------------------------------------------------------------------- */
-/* ------ to delete ----------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------- */
-                                  /* App.css */
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .search-bar-container {
-  position: absolute;
-  top: 30px; 
-  right: 30px; 
-}
-
-#search-field {
-  border-radius: 5px;
-  border: 1px solid rgb(230, 37, 204);
-} */
-
-/* ---------------------------------------------------------------------------------- */
-/* ------ to delete ----------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------- */
-                                  /* NavBar.css */
-
-
-/* .nav-tabs {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-} */
-
-/* .my-links {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: royalblue;
-} */
-
-/* .my-tabs a {
-    color: white; 
-    text-decoration: none;
-    font-size: 20px;
-} */
-
-
-/* .my-tabs:hover {
-    background-color: rgb(132, 45, 213);
-} */
-
-
-
-/* body {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 0% 25%;
-} */
-
-/* .toy {
-    position: relative;
-    display: inline-block;
-    flex-direction:row-reverse;
-    align-items: left;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 30px 0px;
-    background-color: rgba(255, 255, 255, 0.1);
-} */
-
-/* .toy > div {
-    background-color: rgba(64, 17, 41, 0.5);
-    border: 1px solid white;
-    border-radius: 7px;
-    padding: 0px 10px 15px;
-}   */
-
-/* .toy:hover {
-    border: 2px solid rgb(55, 233, 27);
-} */
-
-/* .toy-image {
-    width: 500px; 
-    height: auto; 
-} */
-
-/* #description {
-    text-align: center;
-    font-size: 17px;
-    border: 1px solid white;
-    padding: 20px;
-
-} */
-
-/* #toy-price {
-    color: rgb(187, 255, 85);
-    font-weight: bold;
-} */
-
-
-/* ---------------------------------------------------------------------------------- */
-/* ------ to delete ----------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------- */
-                                  /* NewToyForm.css */
-
-
-/* #name,
-#image,
-#age,
-#price,
-#description {
-    border-radius: 8px;
-} */
-
-
-/* .form-container {
-    position: relative; 
-    display: inline-block; 
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    border: 1px solid white;
-    padding: 70px;
-    border-radius: 8px;
-    overflow: hidden; 
-    z-index: 1;
-}
-
-.form-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://st2.depositphotos.com/2538523/6871/v/950/depositphotos_68715711-stock-illustration-colorful-kids-on-the-notebook.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
-    z-index: -1; 
-    border-radius: 8px;
-}
-
-.my-inputs {
-    width: 100%; 
-    padding: 10px;
-    margin: 10px 0; 
-    box-sizing: border-box; 
-    border-radius: 4px; 
-    border: 1px solid #ccc;
-} */

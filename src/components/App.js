@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 function App() {  
   const [toys, setToys] = useState([]); 
   const [searchText, setSearchText] = useState("");  
+  const [selectedAge, setSelectedAge] = useState("all");
 
   useEffect(() => {             
     fetch("http://localhost:4000/toys")  
@@ -16,9 +17,10 @@ function App() {
       .then(data => setToys(data)); 
   }, []);
 
-  const filteredToys = toys.filter(toy => {
-    return toy.name.toUpperCase().includes(searchText.toUpperCase());
-  })
+  const filteredToysByAge = selectedAge === "all" ? toys : toys.filter(toy => toy.age === selectedAge);   
+  const filteredToys = filteredToysByAge.filter(toy => {
+  return toy.name.toUpperCase().includes(searchText.toUpperCase());
+  });
   
   function updateSearchText(event) {
     setSearchText(event.target.value);
@@ -47,12 +49,18 @@ function App() {
       });
   }
 
+  function handleAgeChange(event){
+    setSelectedAge(event.target.value)
+  }
+
+
+
   return (
     <div className="App">
       <NavBar />
       <Header />
       
-      <Outlet context={{toys: filteredToys, addNewToy: addNewToy, deleteToy: deleteToy, updateSearchText: updateSearchText, searchText: searchText}} /> 
+      <Outlet context={{toys: filteredToys, addNewToy: addNewToy, deleteToy: deleteToy, updateSearchText: updateSearchText, searchText: searchText, handleAgeChange: handleAgeChange, selectedAge: selectedAge}} /> 
     </div>
   );
 }
