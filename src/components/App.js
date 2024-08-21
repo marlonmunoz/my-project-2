@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import NavBar from './NavBar';
 import Header from './Header';
 import { Outlet } from 'react-router-dom'; 
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -27,6 +28,9 @@ function App() {
   }
 
   function addNewToy(newToy) {
+    const tempToy = { ...newToy, id: uuidv4(), temp: true }; // Add a unique ID and temp flag
+    setToys([...toys, tempToy]); // Temporarily add the new toy to the state
+
     const configObj = {
       method: "POST",
       headers: {
@@ -38,7 +42,9 @@ function App() {
   
     fetch("http://localhost:4000/toys", configObj)
       .then(response => response.json())
-      .then(newToyData => setToys([...toys, newToyData])); // Update state with the new toy data
+      .then(newToyData => {
+        setToys([...toys, newToyData]); // Add the new toy to the state
+      });
   }
 
   return (

@@ -47,7 +47,22 @@
       "age": "11-12 months",
       "price": 80,
       "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
+    },
+    {
+      "id": "7",
+      "name": "Realist Play Kit",
+      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
+      "age": "13-14 months",
+      "price": 80,
+      "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
+    },
+    {
+      "id": "8",
+      "name": "Pioneer Play Kit",
+      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
+      "age": "15-16 months",
+      "price": 80,
+      "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
     }
-    
   ]
 }
