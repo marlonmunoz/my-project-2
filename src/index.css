@@ -48,8 +48,9 @@ code {
 .my-tabs a:hover {
   background-color: rgb(132, 45, 213);
   box-shadow: 0 0 30px rgba(55, 233, 27, 0.5);
-
 }
+
+/* ---------------------------------------------------------------------------------- */
 
 
 #search {
@@ -81,6 +82,7 @@ body {
 .form-container {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .toy {
@@ -99,6 +101,8 @@ body {
   border: 1px solid white;
   border-radius: 7px;
   padding: 0px 10px 15px;
+  width: 500px; /* Set a fixed width */
+  height: 350px;
 }  
 
 .delete-button {
@@ -134,7 +138,7 @@ body {
 
 
 /* ---------------------------------------------------------------------------------- */
-/* ------ ADD NEW TOY TAB ------------------------------------------------------------*/
+/* ------ ADD NEW TOY TAB FORM -------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------- */
 
 #name,
@@ -152,10 +156,12 @@ body {
   color: rgb(255, 255, 255);
   font-weight: 500;
   border: 1px solid white;
-  padding: 70px;
+  padding: 80px;
   border-radius: 8px;
   overflow: hidden; 
   z-index: 1;
+  width: 350px; /* Set a fixed width */
+  height: 700px; /* Set a fixed height */
 }
 
 .form-container::before {
@@ -190,6 +196,7 @@ body {
 
 }
 
+/* BUTTON  */
 .add-to-list {
 
   padding: 4px 40px;
