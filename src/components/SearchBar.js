@@ -14,8 +14,8 @@ function SearchBar() {
           <option value="7-8 months">7-8 months</option>
           <option value="9-10 months">9-10 months</option>
           <option value="11-12 months">11-12 months</option>
-          <option value="13-14 months">13-14 months</option>
-          <option value="15-16 months">15-16 months</option>
+          <option value="13-15 months">13-15 months</option>
+          <option value="16-18 months">16-18 months</option>
         </select>
       </div>
       <br></br>

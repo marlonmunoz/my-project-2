@@ -50,19 +50,19 @@
     },
     {
       "id": "7",
-      "name": "Realist Play Kit",
-      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
-      "age": "13-14 months",
-      "price": 80,
-      "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
+      "name": "Babbler Play Kit",
+      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F6M7Xz19oTWIyEWZNfsGK1Z%2F954d8e7b49d2d71d5279adeb8df86cc4%2FLovevery-VKS-Playkit-EU-TheBabbler-EN-ISO-101-April2021.png&w=1920&q=75",
+      "age": "13-15 months",
+      "price": 120,
+      "description": "Your toddler may be finding their voice and their special place in the world. This Play Kit offers new challenges in balance, object permanence, and spatial awareness, as well as an early introduction to physics."
     },
     {
       "id": "8",
-      "name": "Pioneer Play Kit",
-      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F4sVtrirRw4nh0SL9MdwhKI%2F129dc010a7a76a8a0f6e9aedfbed2e18%2FLovevery-VKS-Playkit-TheCharmer-ISO-283-April2021_transparent.png&w=1920&q=75",
-      "age": "15-16 months",
-      "price": 80,
-      "description": "Your baby is starting to understand cause and effect. This Play Kit is designed to help your baby explore the concept of object permanence, practice problem-solving, and develop their fine motor skills."
+      "name": "Adventurer Play Kit",
+      "image": "https://lovevery.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F0sea1vycfyqy%2F5xClG7UVG7RzizKNfSEGwL%2F80cdf26e392ff4d8f613ae90586ee588%2FUS_Lovevery-VKS-Playkit-The-Adventurer_Transparent.20230404181016079.png&w=750&q=75",
+      "age": "16-18 months",
+      "price": 120,
+      "description": "Your toddler is making so many discoveries about the real world at this stage. This Play Kit lets them experiment with cause and effect, use both hands at once to complete a task, and learn about a wider range of emotions"
     }
   ]
 }
