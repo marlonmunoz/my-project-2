@@ -22,3 +22,35 @@ To add `@babel/plugin-proposal-private-property-in-object` to your `devDependenc
 `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
 
 This will add the package to your devDependencies in package.json and ensure it is available for Babel to use.
+
+# IN THIS PROJECT
+
+## Componets
+- App.js
+- About.js
+- ErrorPage.js
+- Header.js
+- LikeButton.js
+- NavBar.js
+- NewToyForm.js
+- SearchBar.js
+- Toy.js
+- ToyList.js
+
+## Event Listeners
+- onClick
+- onSubmit
+- onChange
+
+## HOOKS
+- `{useState}`
+- `{useEffect}`
+- `{useOutletContext}`
+- `{useNavigate}`
+
+## Methods 
+- GET
+- POST
+
+## Endpoints
+- http://localhost:4000/toys
