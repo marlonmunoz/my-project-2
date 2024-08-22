@@ -4,8 +4,6 @@ import Header from './Header';
 import { Outlet } from 'react-router-dom'; 
 import { v4 as uuidv4 } from 'uuid';
 
-
-
 function App() {  
   const [toys, setToys] = useState([]); 
   const [searchText, setSearchText] = useState("");  
